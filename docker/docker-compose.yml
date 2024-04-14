@@ -9,5 +9,6 @@ services:
     network_mode: "host"
     volumes:
       - ./models:/Ranni/models
+      - ./huggingface:/root/.cache/huggingface
     tty: true
     stdin_open: true
