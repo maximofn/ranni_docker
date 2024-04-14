@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  ranni:
+    container_name: ranni
+    image: maximofn/ranni:1.0.1
+    build: .
+    runtime: nvidia
+    network_mode: "host"
+    volumes:
+      - ./models:/Ranni/models
+    tty: true
+    stdin_open: true
